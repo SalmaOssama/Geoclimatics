@@ -10,7 +10,7 @@ const LandingDisplay: FC<LandingDisplayProps> = ({ userLocation }) => {
     if (userLocation && landResponse)
         return (
             <div className="landing-display-content-container">
-                <CurrentCondition cardTitle={'CurrentCondition'} location={userLocation.country_name} response={landResponse} />
+                <CurrentCondition cardTitle={'Current Condition'} location={userLocation.country_name} response={landResponse} />
                 <DailyForecast landResponse={landResponse}/>
                 <HourlyForecast landResponse={landResponse}/>
             </div>
