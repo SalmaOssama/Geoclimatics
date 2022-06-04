@@ -1,0 +1,30 @@
+@import './current_condition';
+@import './daily_forecast';
+@import './hourly_forecast';
+@import './current_city_condition';
+
+.card {
+    background-color: $card-background;
+    border-radius: 5px;
+
+    .card-header {
+        color: $font-headers;
+        padding-inline-start: 10px;
+        padding-block: 10px;
+        font-size: 1em;
+        font-weight: 600;
+    }
+
+    .card-body {
+        display: flex;
+        flex-direction: row;
+        padding-block: 2em;
+        padding-inline: 1em;
+    }
+}
+
+@media (max-width:800px) {
+    .card{
+        margin-bottom:1em;
+    }
+}

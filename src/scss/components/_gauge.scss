@@ -1,0 +1,33 @@
+
+.gauge {
+   width:160px;
+   height: 80px;
+   position:relative;
+   color:$font-headers;
+   font-size: 20px;
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+   box-sizing: border-box;
+   overflow: hidden;
+   --percentage:0;
+   --fill:blue;
+   &:after{
+        content: '';
+        position: absolute;
+        box-sizing: border-box;
+        left:0;
+        top:0;
+        width:160px;
+        height: 160px;
+        border: 30px solid ;
+        border-color:  black black var(--fill) var(--fill);
+        border-radius: 50%;
+        transform: rotate(calc(1deg*(-45 + var(--percentage)*1.8)));
+   }
+   .value{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+}

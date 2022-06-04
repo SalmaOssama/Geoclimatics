@@ -1,0 +1,47 @@
+.daily-forecast{
+    position: relative;
+    .card-body{
+    flex-direction: column !important;
+    }
+    .tabs-container{
+        display: flex;
+        flex-direction: row;
+        span{
+            color:$font-headers;
+            cursor: pointer;
+        }
+        span:hover, .selected-tab span{
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+    }
+    .temperature-content,.astronomy-content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-inline:10px;
+        margin-block:5px;
+        .weather-item-value {
+            padding-inline-start: 0 !important;
+            color:$font-headers;
+        }
+        .weather-item-header {
+            color: $font-primary !important
+        }
+    }
+    .date-container{
+        position: absolute;
+        right:5px;
+        bottom:5px;
+        color: $font-headers;
+        font-size: 0.8em;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        img{
+            width:15px;
+            height: 15px;
+            margin-inline-end: 3px;
+        }
+    }
+}

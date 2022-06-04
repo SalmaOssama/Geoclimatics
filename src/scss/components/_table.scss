@@ -1,0 +1,47 @@
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table td,
+table th {
+    border: none;
+    padding: 8px;
+    text-align: center;
+}
+
+table td {
+    border-right: 0.01px solid $font-secondary;
+    padding: 8px;
+    text-align: center;
+    color: $font-secondary;
+}
+table tr:nth-child(even) {
+    background-color: $light-background;
+}
+
+
+table tbody tr:hover {
+    background-color: $table-hover;
+}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: $font-secondary;
+    border: none;
+    color: $font-headers;
+}
+
+table tbody {
+    border-bottom: 0.01px solid $font-secondary;
+    border-left: 0.01px solid $font-secondary;
+    border-right: 0.01px solid $font-secondary;
+}
+
+.table-wrapper{
+    height: 100%;
+    width: 100%;
+    overflow-x: auto;
+}

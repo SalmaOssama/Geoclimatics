@@ -1,0 +1,29 @@
+.weather-dashboard-content-container{
+    padding-inline: 20px;
+    padding-block: 3em;
+    display: grid;
+    grid-gap: 0.5em;
+    grid-template-columns:  55% 45%;
+    grid-template-rows: repeat(5,minmax(20em,auto));
+
+    .todays-temperature-container,.todays-weather-container,.todays-weather-container,.temperature-history-card{
+        grid-column: span 2;
+    }
+    .current-condition{
+        .card-body{
+            padding-top:100px !important;
+        }
+    } 
+    .current-city-condition-container{
+        grid-column: 1 2;
+    }
+    .current-city-summary-container{
+        grid-column: 2 3;
+    }
+}
+
+@media (max-width:800px) {
+    .weather-dashboard-content-container{
+        display: block !important;
+    }
+}

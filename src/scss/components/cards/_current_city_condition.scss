@@ -1,0 +1,37 @@
+.current-city-condition-container {
+    .card-body{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .gauge-card {
+        width: 200px;
+        height: 210px;
+        background-color: $light-background;
+        border-radius: 5px;
+        margin-inline-end: 20px;
+        margin-bottom:10px;
+        .gauge-card-header {
+            display: flex;
+            color: $font-headers;
+            div{
+                padding-top:5px;
+                padding-inline-start: 5px;
+            }
+            img {
+                margin-inline-start: auto;
+                padding-inline-end: 5px;
+                padding-top: 5px;
+                width: 30px;
+                height: 30px;
+            }   
+        }
+        .gauge-card-body{
+            width:100%;
+            height: 100%;
+            .gauge{
+                margin: auto;
+                transform: translate(0,30px);
+            }
+        }
+    }
+}
