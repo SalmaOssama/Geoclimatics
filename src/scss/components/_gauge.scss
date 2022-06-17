@@ -3,7 +3,7 @@
    width:160px;
    height: 80px;
    position:relative;
-   color:$font-headers;
+   color:var(--font-headers);
    font-size: 20px;
    display: flex;
    align-items: flex-end;

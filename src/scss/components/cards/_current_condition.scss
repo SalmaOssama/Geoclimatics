@@ -1,5 +1,5 @@
 .current-condition {
-    background-color: $card-background;
+    background-color: var(--card-background);
     display: flex;
     flex-direction: column;
     position: relative;
@@ -23,7 +23,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        color: $font-headers;
+        color: var(--font-headers);
 
         img {
             width: 50px;
@@ -61,7 +61,7 @@
         right: 5px;
         font-size: 0.8em;
         font-weight: 500;
-        color: $font-headers;
+        color: var(--font-headers);
 
         img {
             width: 15px;

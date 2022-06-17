@@ -5,11 +5,10 @@ import Card from "../../../../components/Card/index";
 import * as d3 from 'd3';
 import { formatTime } from "../../../../services/formatters/timeFormatter";
 import { LandWeatherDataResponse } from '../../../LandingDisplay/index.interface'
-const TodaysTemperature: FC<LandWeatherDataResponse> = ({ data }) => {
+const TodaysTemperature: FC<LandWeatherDataResponse> = ({data }) => {
 
     let hourlyData = data.weather[0].hourly
     const barRef = useRef()
-
     useEffect(() => {
         if (barRef.current) {
             (barRef.current as any).innerHTML = ''
@@ -29,7 +28,7 @@ const TodaysTemperature: FC<LandWeatherDataResponse> = ({ data }) => {
             let yRange = [height - marginBottom, marginTop];
             let xPadding = 0.4; 
             let yLabel = "Temperature °C"; 
-            let color = "#121f56"; 
+            let color = "var(--font-secondary)"; 
             const X = d3.map(hourlyData, x);
             const Y = d3.map(hourlyData, y);
 
@@ -50,7 +49,7 @@ const TodaysTemperature: FC<LandWeatherDataResponse> = ({ data }) => {
                 .attr("width", width)
                 .attr("height", height)
                 .attr("viewBox", [0, 0, width, height])
-                .attr("style", "width: 100%; height: 100%; color:#8B96DA;")
+                .attr("style", "width: 100%; height: 100%; color:var(--chart-ticks);")
 
             svg.append("g")
                 .attr("transform", `translate(${marginLeft},0)`)

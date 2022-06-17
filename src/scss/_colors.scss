@@ -1,8 +1,24 @@
-$background-color:#2f3e81;
-$card-background:#3c4b90;
-$font-primary: #96b5e4;
-$font-secondary: #121f56;
-$font-headers:white;
-$light-background:#4c5ca7;
-$nav-button-hover:#ffd900;
-$table-hover:#ddd;
+:root,
+:root.dark {
+    --background-color: #2f3e81;
+    --card-background: #3c4b90;
+    --font-primary: #96b5e4;
+    --font-secondary: #121f56;
+    --font-headers: white;
+    --light-background: #4c5ca7;
+    --nav-button-hover: #ffd900;
+    --table-hover: #ddd;
+    --chart-ticks: #8B96DA;
+}
+
+:root.light {
+    --background-color: #4c88b0;
+    --card-background: #579bc7;
+    --font-primary: #285674;
+    --font-secondary: #306e97;
+    --font-headers: white;
+    --light-background: #6cafdc;
+    --nav-button-hover: #ffd900;
+    --table-hover: #ddd;
+    --chart-ticks: #235372;
+}

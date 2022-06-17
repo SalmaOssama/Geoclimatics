@@ -4,11 +4,11 @@
 @import './current_city_condition';
 
 .card {
-    background-color: $card-background;
+    background-color: var(--card-background);
     border-radius: 5px;
 
     .card-header {
-        color: $font-headers;
+        color: var(--font-headers);
         padding-inline-start: 10px;
         padding-block: 10px;
         font-size: 1em;

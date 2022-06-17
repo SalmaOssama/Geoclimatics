@@ -7,6 +7,7 @@ import TodaysWeather from './partials/TodaysWeather'
 import WeatherHistory from "./partials/WeatherHistory";
 import CurrentCityCondition from './partials/CurrentCityCondition'
 import CurrentCondition from "../LandingDisplay/partials/CurrentCondition/index";
+
 const WeatherDashboard: FC = () => {
     const { historicalCityResponse, statisticalCityResponse, selectedCity }
         = useWeatherDashboard();
@@ -18,8 +19,8 @@ const WeatherDashboard: FC = () => {
             <CurrentCondition cardTitle={'Summary'} location={selectedCity.name} response={statisticalCityResponse} />
             <TodaysTemperature data={statisticalCityResponse} />
             <TodaysWeather data={statisticalCityResponse} />
-            <TemperatureHistory data={historicalCityResponse.data} />
-            <WeatherHistory data={historicalCityResponse.data}/>
+            <TemperatureHistory data={historicalCityResponse.data}/>
+            <WeatherHistory data={historicalCityResponse.data} />
         </div>
     )
 }

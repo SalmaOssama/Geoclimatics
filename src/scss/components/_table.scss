@@ -12,32 +12,32 @@ table th {
 }
 
 table td {
-    border-right: 0.01px solid $font-secondary;
+    border-right: 0.01px solid var(--font-secondary);
     padding: 8px;
     text-align: center;
-    color: $font-secondary;
+    color: var(--font-secondary);
 }
 table tr:nth-child(even) {
-    background-color: $light-background;
+    background-color: var(var(--light-background));
 }
 
 
 table tbody tr:hover {
-    background-color: $table-hover;
+    background-color: var(--table-hover);
 }
 
 table th {
     padding-top: 12px;
     padding-bottom: 12px;
-    background-color: $font-secondary;
+    background-color: var(--font-secondary);
     border: none;
-    color: $font-headers;
+    color: var(--font-headers);
 }
 
 table tbody {
-    border-bottom: 0.01px solid $font-secondary;
-    border-left: 0.01px solid $font-secondary;
-    border-right: 0.01px solid $font-secondary;
+    border-bottom: 0.01px solid var(--font-secondary);
+    border-left: 0.01px solid var(--font-secondary);
+    border-right: 0.01px solid var(--font-secondary);
 }
 
 .table-wrapper{

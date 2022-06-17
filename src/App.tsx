@@ -8,14 +8,13 @@ import './scss/style.scss';
 
 const App = () => {
   const [userLocation, setUserLocation] = useState<Location>();
-
   return (
     <div className='main-container'>
       <Router>
         <Header setUserLocation={setUserLocation} />
         <Switch>
           <Route exact={true} path='/' component={() => <LandingDisplay userLocation={userLocation} />} />
-          <Route exact={true} path='/dashboard' component={() => <WeatherDashboard />} />
+          <Route exact={true} path='/dashboard' component={() => <WeatherDashboard/>} />
         </Switch>
       </Router>
     </div>

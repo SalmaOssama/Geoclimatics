@@ -6,13 +6,13 @@
     .gauge-card {
         width: 200px;
         height: 210px;
-        background-color: $light-background;
+        background-color: var(--light-background);
         border-radius: 5px;
         margin-inline-end: 20px;
         margin-bottom:10px;
         .gauge-card-header {
             display: flex;
-            color: $font-headers;
+            color: var(--font-headers);
             div{
                 padding-top:5px;
                 padding-inline-start: 5px;

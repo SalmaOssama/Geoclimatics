@@ -30,7 +30,7 @@
 
             svg:hover {
                 polyline {
-                    stroke: $nav-button-hover;
+                    stroke: var(--nav-button-hover);
                 }
             }
         }
@@ -61,23 +61,23 @@
                 padding-block-start: 1.5em;
                 border-radius: 5px;
                 position: relative;
-                background-color: $light-background;
+                background-color: var(--light-background);
                 .summary {
                     font-size: 1.2em;
                     font-weight: 500;
-                    color: $font-primary;
+                    color: var(--font-primary);
                     margin-bottom: 3px;
                 }
 
                 .temperature {
                     font-size: 0.9em;
-                    color: $font-headers;
+                    color: var(--font-headers);
                     margin-bottom: 5px;
                 }
 
                 .time {
                     font-size: 0.9em;
-                    color: $font-headers;
+                    color: var(--font-headers);
                 }
 
                 img {

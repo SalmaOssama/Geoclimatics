@@ -26,7 +26,7 @@ const useHeader = (setUserLocation: Function) => {
             const allCitiesResponse = await axios.get<AllCitiesResponse>(
                 'https://wft-geo-db.p.rapidapi.com/v1/geo/cities',
                 {
-                    params: { location: `${lat}+${long}` },
+                    params: { location: long < 0 ? `${lat}${long}` : `${lat}+${long}` },
                     headers: {
                         'X-RapidAPI-Host': 'wft-geo-db.p.rapidapi.com',
                         'X-RapidAPI-Key': '44d56dc0fcmsh1c750cd6f26c5cfp1b2fa8jsndb69c30c0282'

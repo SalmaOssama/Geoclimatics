@@ -31,7 +31,7 @@ const TemperatureHistory: FC<HistoricalWeatherResponse> = ({ data }) => {
             let defined;
             let xType = d3.scaleLinear;
             let yRange = [height - marginBottom, marginTop];
-            let color = "#121f56"; 
+            let color = "var(--font-secondary)"; 
             let strokeLinecap = "round"; 
             let strokeLinejoin = "round"; 
             let strokeWidth = 1.5; 
@@ -63,7 +63,7 @@ const TemperatureHistory: FC<HistoricalWeatherResponse> = ({ data }) => {
                 .attr("width", width)
                 .attr("height", height)
                 .attr("viewBox", [0, 0, width, height])
-                .attr("style", "width: 100%; height: 100%;color:#8B96DA;");
+                .attr("style", "width: 100%; height: 100%;color:var(--chart-ticks);");
 
             svg.append("g")
                 .attr("transform", `translate(0,${height - marginBottom})`)

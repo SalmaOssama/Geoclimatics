@@ -7,7 +7,7 @@
         display: flex;
         flex-direction: row;
         span{
-            color:$font-headers;
+            color:var(--font-headers);
             cursor: pointer;
         }
         span:hover, .selected-tab span{
@@ -23,17 +23,17 @@
         margin-block:5px;
         .weather-item-value {
             padding-inline-start: 0 !important;
-            color:$font-headers;
+            color:var(--font-headers);
         }
         .weather-item-header {
-            color: $font-primary !important
+            color: var(--font-primary) !important
         }
     }
     .date-container{
         position: absolute;
         right:5px;
         bottom:5px;
-        color: $font-headers;
+        color: var(--font-headers);
         font-size: 0.8em;
         font-weight: 500;
         display: flex;
