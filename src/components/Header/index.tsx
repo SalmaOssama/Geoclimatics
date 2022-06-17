@@ -33,8 +33,8 @@ const Header: FC<HeaderProps> = ({ setUserLocation }) => {
                             <span className={showThemeList ? "arrow show" : "arrow"}>{next_arrow}</span>
                         </span>
                         {showThemeList && <ul className="drop-down-content">
-                            <li className={localStorage.getItem('theme')==='light'?'selected':""} onClick={() => handleThemeChange('light')}>Light</li>
-                            <li className={localStorage.getItem('theme')==='dark' ||localStorage.getItem('theme')===undefined?'selected':""} onClick={() => handleThemeChange('dark')}>Dark</li>
+                            <li className={localStorage.getItem('theme') === 'dark' || !localStorage.getItem('theme') ? 'selected' : ""} onClick={() => handleThemeChange('dark')}>Dark</li>
+                            <li className={localStorage.getItem('theme') === 'light' ? 'selected' : ""} onClick={() => handleThemeChange('light')}>Light</li>
                         </ul>}
                     </button>
 
